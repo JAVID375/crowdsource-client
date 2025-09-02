@@ -63,16 +63,16 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-3">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61580015830037" className="hover:text-white transition-colors">
               <Facebook size={20} />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://x.com/explore" className="hover:text-white transition-colors">
               <Twitter size={20} />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/shaik-javid-34758b2b2/" className="hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:support@example.com" className="hover:text-white transition-colors">
+            <a href="mailto:shaikjavid71592@gmail.com" className="hover:text-white transition-colors">
               <Mail size={20} />
             </a>
           </div>
