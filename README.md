@@ -8,19 +8,19 @@ Citizens can raise complaints, and authorities can manage and resolve them effic
 ## 📸 Screenshots
 
 ### 🏠 Citizen Login
-![Citizen Login](client/public/screenshots/citizen-login.png)
+![Citizen Login](client/public/screenshots/citizen-Login.png)
 
 ### 📝 Official Login
-![Official Login](client/public/screenshots/official-login.png)
+![Official Login](client/public/screenshots/official-Login.png)
 
 ### 📊 Citizen Dashboard
-![Citizen Dashboard](client/public/screenshots/citizen-dashboard.png)
+![Citizen Dashboard](client/public/screenshots/Citizen-Dashboard.png)
 
 ### 👮 Official Dashboard
-![Official Dashboard](client/public/screenshots/official-dashboard.png)
+![Official Dashboard](client/public/screenshots/Official-Dashboard.png)
 
 ### 📑 Detailed Report
-![Detailed Report](client/public/screenshots/detailed-report.png)
+![Detailed Report](client/public/screenshots/Detailed-Report.png)
 
 ---
 
