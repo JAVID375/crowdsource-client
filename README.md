@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# 🌐 Crowdsource Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **MERN stack web application** designed to handle crowdsource-based complaints and issue tracking.  
+Citizens can raise complaints, and authorities can manage and resolve them efficiently.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Screenshots
 
-### `npm start`
+### 🏠 Citizen Login
+![Citizen Login](client/public/screenshots/citizen-login.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📝 Official Login
+![Official Login](client/public/screenshots/official-login.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📊 Citizen Dashboard
+![Citizen Dashboard](client/public/screenshots/citizen-dashboard.png)
 
-### `npm test`
+### 👮 Official Dashboard
+![Official Dashboard](client/public/screenshots/official-dashboard.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📑 Detailed Report
+![Detailed Report](client/public/screenshots/detailed-report.png)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Features
+- 📝 Citizens can **register complaints** with details and images  
+- 📂 Complaints stored in **MongoDB** database  
+- 👮 Authorities can **view and manage complaints**  
+- 📊 Dashboard for tracking complaint status  
+- 🔐 Secure authentication for users and admins  
+- ⚡ Responsive UI built with React + Tailwind  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tech Stack
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Version Control**: Git & GitHub  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/JAVID375/crowdsource-client.git
+cd crowdsource-client
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️⃣ Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### For client
+```bash
+cd client
+npm install
+```
 
-## Learn More
+#### For server
+```bash
+cd ../server
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3️⃣ Set up environment variables  
+Create a `.env` file in the **server** folder with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+JWT_SECRET=your_secret_key
+```
 
-### Code Splitting
+### 4️⃣ Run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Start backend
+```bash
+cd server
+npm start
+```
 
-### Analyzing the Bundle Size
+#### Start frontend
+```bash
+cd client
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👉 Open in browser: [http://localhost:3000](http://localhost:3000)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📂 Project Structure
+```
+crowdsource-client/
+│
+├── client/        # React frontend
+│   ├── public/
+│   └── src/
+│
+├── server/        # Node + Express backend
+│   ├── models/
+│   ├── routes/
+│   └── uploads/   # complaint images
+│
+├── .gitignore
+├── README.md
+└── package.json
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
 
-### Deployment
+Contributions are welcome! 🎉
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Fork the repository  
+2. Create your feature branch (`git checkout -b feature-xyz`)  
+3. Commit changes (`git commit -m "Added xyz feature"`)  
+4. Push to branch (`git push origin feature-xyz`)  
+5. Open a Pull Request  
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Javid ([@JAVID375](https://github.com/JAVID375))
