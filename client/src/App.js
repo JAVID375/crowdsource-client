@@ -7,6 +7,9 @@ import OfficialDashboard from "./pages/OfficialDashboard";
 import Register from "./pages/RegistrationPage";
 import ReportIssue from "./pages/ReportIssue";
 import PrivateRoute from "./components/PrivateRoute";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
+
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
         <Route path="/" element={<Register />} />
         <Route path="/citizen-login" element={<CitizenLogin />} />
         <Route path="/official-login" element={<OfficialLogin />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
 
+        
         {/* Protected Routes */}
         <Route
           path="/citizen-dashboard"

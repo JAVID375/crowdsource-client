@@ -101,6 +101,11 @@ const CitizenLogin = () => {
             </span>
           </p>
         </Link>
+        <Link to="/forgot-password">
+          <p className="text-center text-white text-sm mt-2 hover:underline">
+            Forgot Password?
+          </p>
+        </Link>
       </div>
     </div>
   );

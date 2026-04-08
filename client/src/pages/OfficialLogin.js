@@ -98,6 +98,13 @@ function OfficialLogin() {
               Register here
             </span>
           </p>
+          <p>
+            <Link to="/forgot-password">
+                      <p className="text-center text-white text-sm mt-2 hover:underline">
+                        Forgot Password?
+                      </p>
+                    </Link>
+          </p>
         </Link>
       </div>
     </div>
