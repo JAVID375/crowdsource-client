@@ -30,9 +30,9 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
-        { password }
-      );
+  `${process.env.REACT_APP_API_URL}/api/auth/reset-password/${token}`,
+  { password }
+);
 
       toast.success("✅ Password reset successful");
 

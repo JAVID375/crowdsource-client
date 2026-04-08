@@ -19,8 +19,8 @@ const CitizenDashboard = () => {
       try {
         const userId = localStorage.getItem("userId");
         const res = await axios.get(
-          `http://localhost:5000/api/complaints/user/${userId}`
-        );
+  `${process.env.REACT_APP_API_URL}/api/complaints/user/${userId}`
+);
         setComplaints(res.data);
       } catch (err) {
         console.error(err);
@@ -130,7 +130,7 @@ const CitizenDashboard = () => {
             <center>
             {selectedComplaint.fileUrl && (
               <img
-  src={`http://localhost:5000${selectedComplaint.fileUrl}`}
+  src={`${process.env.REACT_APP_API_URL}${selectedComplaint.fileUrl}`}
   alt="Complaint evidence"
   style={{ width: '500px', height: '300px', objectFit: 'cover', borderRadius: '8px' }}
 />

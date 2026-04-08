@@ -13,7 +13,9 @@ const OfficialDashboard = () => {
   useEffect(() => {
     const fetchComplaints = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/complaints");
+        const res = await axios.get(
+  `${process.env.REACT_APP_API_URL}/api/complaints`
+);
         setComplaints(res.data);
       } catch (error) {
         console.error("Error fetching complaints:", error);
@@ -55,9 +57,12 @@ const OfficialDashboard = () => {
   // Update complaint status
   const handleStatusUpdate = async (id, newStatus) => {
     try {
-      await axios.patch(`http://localhost:5000/api/complaints/${id}/status`, {
-        status: newStatus,
-      });
+      await axios.patch(
+  `${process.env.REACT_APP_API_URL}/api/complaints/${id}/status`,
+  {
+    status: newStatus,
+  }
+);
 
       // Update local state
       setComplaints((prev) =>
@@ -226,7 +231,7 @@ const OfficialDashboard = () => {
              <p className="text-gray-700 mb-4">{selectedComplaint.moreInfo}</p>
              <center>
            <img
-  src={`http://localhost:5000${selectedComplaint.fileUrl}`}
+  src={`${process.env.REACT_APP_API_URL}${selectedComplaint.fileUrl}`}
   alt="Complaint evidence"
   style={{ width: '500px', height: '300px', objectFit: 'cover', borderRadius: '8px' }}
 />

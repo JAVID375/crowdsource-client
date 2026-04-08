@@ -59,7 +59,7 @@ router.post("/forgot-password", async (req, res) => {
 
     // ✅ Generate token
     const resetToken = crypto.randomBytes(32).toString("hex");
-    const resetUrl = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetUrl = `${process.env.CLIENT_URL}/reset-password/${token}`;
    console.log("Generated Reset URL:", resetUrl); // Debugging log
     // ✅ Hash token (security)
     const hashedToken = crypto
