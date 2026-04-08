@@ -1,5 +1,6 @@
 // src/components/Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -16,49 +17,48 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h3 className="text-white font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Help & Support
-              </a>
-            </li>
-          </ul>
-        </div>
+<div>
+  <h3 className="text-white font-semibold mb-3">Quick Links</h3>
+  <ul className="space-y-2 text-sm">
+    <li>
+      <Link to="/about" className="hover:text-white transition-colors">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/contact" className="hover:text-white transition-colors">
+        Contact
+      </Link>
+    </li>
+    <li>
+      <Link to="/help" className="hover:text-white transition-colors">
+        Help & Support
+      </Link>
+    </li>
+  </ul>
+</div>
 
-        {/* Legal */}
-        <div>
-          <h3 className="text-white font-semibold mb-3">Legal</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Disclaimer
-              </a>
-            </li>
-          </ul>
-        </div>
-
+{/* Legal */}
+<div>
+  <h3 className="text-white font-semibold mb-3">Legal</h3>
+  <ul className="space-y-2 text-sm">
+    <li>
+      <Link to="/privacy" className="hover:text-white transition-colors">
+        Privacy Policy
+      </Link>
+    </li>
+    <li>
+      <Link to="/terms" className="hover:text-white transition-colors">
+        Terms of Service
+      </Link>
+    </li>
+    <li>
+      <Link to="/disclaimer" className="hover:text-white transition-colors">
+        Disclaimer
+      </Link>
+    </li>
+  </ul>
+</div>
         {/* Socials */}
         <div>
           <h3 className="text-white font-semibold mb-3">Follow Us</h3>
