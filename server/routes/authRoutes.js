@@ -5,9 +5,11 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
+const dns = require("dns");
 // JWT secret key (add this in .env for production)
 const JWT_SECRET = process.env.JWT_SECRET || "mysecretkey";
 
+dns.setDefaultResultOrder("ipv4first");
 // ---------------------
 // REGISTER ROUTE
 // ---------------------
@@ -76,13 +78,17 @@ router.post("/forgot-password", async (req, res) => {
 
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
+  },
+  tls: {
+    rejectUnauthorized: false
   }
 });
-
 const message = `
   <h3>Password Reset Request</h3>
   <p>Click the link below to reset your password:</p>
